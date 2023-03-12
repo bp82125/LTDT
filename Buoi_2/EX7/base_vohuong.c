@@ -8,8 +8,8 @@ typedef struct {
 
 void init_graph(Graph *pG, int n){
 	pG->n=n;
-	for(int i=1;i<=MAX_VERTICES;++i){
-		for(int j=1;j<=MAX_VERTICES;++j){
+	for(int i=1;i<=n;++i){
+		for(int j=1;j<=n;++j){
 			pG->A[i][j]=0;
 		}
 	}
